@@ -1,0 +1,303 @@
+{
+  "contractName": "Library",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/library.sol\":\"Library\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/library.sol\":{\"keccak256\":\"0xd117a107f41d5b405108ecceedf745c815119dc4f49f222bea1859195870dcd4\",\"urls\":[\"bzz-raw://e7bc712adf2850db662df297238bcd65858e7bddce73459365cbc4c469252e7c\",\"dweb:/ipfs/Qmcuo5nEjbvGP8HB6GcHBCuiNXNwC3vfbLodzAmS2qkV8B\"]}},\"version\":1}",
+  "bytecode": "0x60566050600b82828239805160001a6073146043577f4e487b7100000000000000000000000000000000000000000000000000000000600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220d90bc5477cbd7c6c8cfc96bd27c916785f888850344d583f3369d67a7510320264736f6c63430008110033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220d90bc5477cbd7c6c8cfc96bd27c916785f888850344d583f3369d67a7510320264736f6c63430008110033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "25:258:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "25:258:1:-:0;;;;;;;;",
+  "source": "pragma solidity ^0.8.0;\n\nlibrary Library{\n  struct Product {\n        string name;\n        uint256 manufacturingDate;\n        uint transferDate;\n        string currentOwner;\n        string licnseNumber;\n        bool isVerified;\n        bool isPurchased;\n        string qrCode;\n    }\n}\n",
+  "sourcePath": "/home/kaustubh/personal/fake_product/contracts/library.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/library.sol",
+    "exportedSymbols": {
+      "Library": [
+        173
+      ]
+    },
+    "id": 174,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 155,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Library",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "id": 173,
+        "linearizedBaseContracts": [
+          173
+        ],
+        "name": "Library",
+        "nameLocation": "33:7:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Library.Product",
+            "id": 172,
+            "members": [
+              {
+                "constant": false,
+                "id": 157,
+                "mutability": "mutable",
+                "name": "name",
+                "nameLocation": "76:4:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 172,
+                "src": "69:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 156,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "69:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 159,
+                "mutability": "mutable",
+                "name": "manufacturingDate",
+                "nameLocation": "98:17:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 172,
+                "src": "90:25:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 158,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "90:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 161,
+                "mutability": "mutable",
+                "name": "transferDate",
+                "nameLocation": "130:12:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 172,
+                "src": "125:17:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 160,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "125:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 163,
+                "mutability": "mutable",
+                "name": "currentOwner",
+                "nameLocation": "159:12:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 172,
+                "src": "152:19:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 162,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "152:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 165,
+                "mutability": "mutable",
+                "name": "licnseNumber",
+                "nameLocation": "188:12:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 172,
+                "src": "181:19:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 164,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "181:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 167,
+                "mutability": "mutable",
+                "name": "isVerified",
+                "nameLocation": "215:10:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 172,
+                "src": "210:15:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 166,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "210:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 169,
+                "mutability": "mutable",
+                "name": "isPurchased",
+                "nameLocation": "240:11:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 172,
+                "src": "235:16:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 168,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "235:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 171,
+                "mutability": "mutable",
+                "name": "qrCode",
+                "nameLocation": "268:6:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 172,
+                "src": "261:13:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 170,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "261:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Product",
+            "nameLocation": "51:7:1",
+            "nodeType": "StructDefinition",
+            "scope": 173,
+            "src": "44:237:1",
+            "visibility": "public"
+          }
+        ],
+        "scope": 174,
+        "src": "25:258:1",
+        "usedErrors": []
+      }
+    ],
+    "src": "0:284:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.11",
+  "updatedAt": "2023-01-12T11:00:36.362Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
